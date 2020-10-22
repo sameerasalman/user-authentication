@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const objectID = require('mongodb').ObjectID;
-
+# Debug
 router.get('/', (req, res, next) => {
     if(!req.isAuthenticated()) {
         res.redirect('/auth/login');
